@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Renz Jimwel Casanova | Portfolio</title>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="jimwel.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    .img-modal {
+      display: none;
+      position: fixed;
+      z-index: 2000;
+      padding-top: 60px;
+      left: 0; top: 0;
+      width: 100%; height: 100%;
+      overflow: auto;
+      background: rgba(0,0,0,0.9);
+    }
+    .img-modal img {
+      margin: auto;
+      display: block;
+      max-width: 90%;
+      max-height: 80vh;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #000;
+    }
+    .img-modal span {
+      position: absolute;
+      top: 20px; right: 35px;
+      color: #fff;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Bunel's Portfolio</div>
+    <nav>
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="page active-page">
+      <div class="home-content">
+        <div class="profile-pic">
+          <img src="bunel.jpg" alt="Renz Jimwel Casanova">
+        </div>
+        <div class="intro">
+          <h1>Hi, I am <span>Renz Jimwel Casanova</span></h1>
+          <h2>I’m a Web Developer</h2>
+          <p>
+             Website developer with 6 months internship experience optimizing
+ efficiency, productivity, and service quality across multiple
+ environments. Reliable support specialist that blends advanced
+ organizational, technical, and business acumen.
+          </p>
+          <div class="buttons">
+            <a href="#contact" class="btn">Hire Me</a>
+            <a href="resume.pdf" target="_self" class="btn">Resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="page">
+      <h2>About Me</h2>
+      <p><strong>Age:</strong> 22</p>
+      <p><strong>Nickname:</strong> Bunel</p>
+      <p><strong>Height:</strong> 174 cm</p>
+      <p><strong>Weight:</strong> 68 kg</p>
+      <p><strong>Gender:</strong> Male</p>
+      <p><strong>Address:</strong> Brgy. Tumbaga 1, Sariaya, Quezon</p>
+      <h2>Hobbies</h2>
+      <p>Playing Mobile Legends Bangbang,   Going to the gym,   Bashing people</p>
+
+      <h2>Preferred Skills</h2>
+      <ul class="skills">
+        <li>Basic Programming</li>
+        <li>Data Analyst</li>
+        <li>Cloud Computing</li>
+        <li>Network Security</li>
+      </ul>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="page">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>College:</strong> COLLEGE OF SCIENCES, TECHNOLOGY AND COMMUNICATION INC. - Bachelor of Information Technology (2019–2024)</li>
+        <li><strong>Secondary:</strong> Masville National High School (2015–2019)</li>
+        <li><strong>Primary:</strong> Canda Elementary School (2009–2015)</li>
+      </ul>
+      <h2>Awards</h2>
+      <p>Excellence Award in Academic Performance</p>
+      <div class="project-img">
+        <img src="cert.png" alt="Project Screenshot">
+        <img src="cert1.png" alt="Project Screenshot">
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="page">
+      <h2>Experience & Projects</h2>
+      <p>OpenIT Philippine INC.(2023-2024)
+ Managed programming, including troubleshooting,
+ maintenance, updates and building websites</p>
+      <ul>
+        <li> Graphic Designer</li>
+        <li>Portfolio Website Development</li>
+        <li>Basic CRUD Web Application</li>
+      </ul>
+      <div class="project-img">
+        <img src="Krita.png" alt="Project Screenshot">
+        <img src="vscode.png" alt="Project Screenshot">
+      </div>
+    </section>
+  </main>
+
+<footer id="contact">
+  <p><i class="fas fa-phone"></i> 099-4494-0728</p>
+  <p><i class="fas fa-envelope"></i> renzjimwelcasanova@gmail.com</p>
+  <p>
+    <a href="https://www.facebook.com/jimwel.casanova/" target="_self">
+      <i class="fab fa-facebook"></i> Facebook
+    </a> |
+    <a href="https://www.instagram.com/bunellllllllll?igsh=MWRyZHF2dmNwbXc3Ng%3D%3D&utm_source=qr" target="_self">
+      <i class="fab fa-instagram"></i> Instagram
+    </a> |
+    <a href="https://x.com/jimwelcasanova?s=21" target="_self">
+      <i class="fab fa-twitter"></i> Twitter
+    </a>
+  </p>
+  <p>&copy; 2025 Renz Jimwel Casanova. All Rights Reserved.</p>
+</footer>
+
+<div id="imgModal" class="img-modal">
+  <span id="closeModal">&times;</span>
+  <img id="modalImg" src="">
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="jimwel.js"></script>
+
+<script>
+  // clickable image
+  const images = document.querySelectorAll("img");
+  const modal = document.getElementById("imgModal");
+  const modalImg = document.getElementById("modalImg");
+  const closeModal = document.getElementById("closeModal");
+
+  images.forEach(img => {
+    img.addEventListener("click", () => {
+      modal.style.display = "block";
+      modalImg.src = img.src;
+    });
+  });
+
+  closeModal.onclick = () => { modal.style.display = "none"; };
+  modal.onclick = (e) => { if(e.target === modal) modal.style.display = "none"; };
+</script>
+</body>
+</html>
